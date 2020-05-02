@@ -14,7 +14,7 @@ $ cd ~/
 Now once you're logged in as a non-root user, run:
 ```
 $ sudo apt install curl
-$ bash <(curl -s https://raw.githubusercontent.com/FarhanOmar/fin/master/ubuntu_install.sh)
+$ bash <(curl -s https://raw.githubusercontent.com/FarhanOmar/fin/master/install/ubuntu_install.sh)
 
 ```
 Notes:
