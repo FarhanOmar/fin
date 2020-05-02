@@ -3,16 +3,16 @@
 # usermod -aG sudo financier
 
 # Install couchdb
-echo "deb https://apache.bintray.com/couchdb-deb bionic main" | sudo tee -a /etc/apt/sources.list
 curl -L https://couchdb.apache.org/repo/bintray-pubkey.asc | sudo apt-key add -
-sudo apt-get update && sudo apt-get install -y couchdb
+echo "deb https://apache.bintray.com/couchdb-deb bionic main" | sudo tee -a /etc/apt/sources.list
+sudo apt update && sudo apt install -y couchdb
 
 # Install node
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-sudo apt-get install -y nodejs
+sudo apt install -y nodejs
 
 # Git
-sudo apt-get install -y git
+sudo apt install -y git
 
 # Get source code
 git clone https://github.com/FarhanOmar/fin.git
@@ -27,7 +27,7 @@ npm run build
 
 # Install node 10.x before installing pm2
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt-get install -y nodejs
+sudo apt install -y nodejs
 
 # Daemonize
 sudo npm install pm2 -g
