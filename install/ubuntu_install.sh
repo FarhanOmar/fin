@@ -18,7 +18,7 @@ sudo apt-get install -y git
 git clone https://github.com/FarhanOmar/fin.git
 
 # Setup couchdb
-cd financier
+cd fin
 npm install
 node ./install/setup_couchdb.js
 
