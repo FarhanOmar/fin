@@ -15,7 +15,7 @@ sudo apt-get install -y nodejs
 sudo apt-get install -y git
 
 # Get source code
-git clone https://gitlab.com/caleb3141/financier.git
+git clone https://github.com/FarhanOmar/fin.git
 
 # Setup couchdb
 cd financier
